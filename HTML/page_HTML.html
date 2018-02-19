@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="../Images/AquilaGold.png">
+	<link rel="stylesheet" type="text/css" href="../CSS/page_HTML.css">
+	<title>HTML</title>
+</head>
+<body>
+	<header>
+		<a href="Index.html"><-Retour à l'Index</a>
+		<br>
+		<img src="../Images/img_html.jpg">
+	</header>
+	<main>
+		<p>
+			<h4>Balises:</h4>
+			<ul>
+				<li>Balises paires:<br><-body> texte <-/body></li>
+				<li>Balises orphelines:<br><-images/></li>
+			</ul>
+		</p>
+		<p>
+			<h4>Les Attributs:</h4>
+			<dl>
+				<dt>Options des balises, placé après le nom de la balise. 
+					<dd><-balise attribut= « valeur »</dd>
+				</dt>
+			</dl>
+			<br>
+			Doctype = indique qu’une page est en HTML 5
+			<br>
+			<strong>Balise <-html> =</strong> balise principale, englobe le contenu de la page 
+			<dl>
+				<dt><-head> et <-body> = Head donne des info sur le titre, l’encodage de la page c’est généralement court. Infos contenues sont pas sur la page
+					<dd>Body partie principale de la page, tout ce qui est écrit est dedans et est affiché.</dd>
+				</dt>
+			</dl>
+			<strong>Balise <-p> :</strong> pour le texte et utiliser la balise <-br/> pour sauter une ligne.
+		</p>
+		<p>
+			<h4>Les titres:</h4>
+			<-h1> à <-h6> en ordre d’importance. Pas de h2 sans h1. 
+		</p>
+		<p>
+			<dl>
+				<dt><strong>Balise <-em>:</strong>
+					<dd>Met en valeur un texte (en italique)</dd>
+				</dt>
+				<dt><strong>Balise <-strong>:</strong>
+					<dd>met en valeur un texte (en gras)</dd>
+				</dt>
+				<dt><strong>Balise <-mark>:</strong>
+					<dd>surligne un texte</dd>
+				</dt>
+			</dl>
+		</p>
+		<p>
+			<h4>Les listes:</h4>
+			<dl>
+				<dt><strong>Liste non ordonné ou puce:</strong>
+					<dd> <ul> ul = unordered list.<br> 
+					Chaque element de liste : <-li>, li = List item.<br>
+					Ajouter une autre <-ul> dans <-li> pour du plus complexe </dd>
+				</dt>
+				<dt><strong>Listes ordonnées ou listes numérotées: <-ol></strong>
+					<dd>ol = ordered list </dd>
+				</dt>
+				<dt><strong>Liste definition (plus rare) : <-dl>(délimiter liste)</strong>
+					<dd>= data list, <-dt>(délimiter terme), et <-dd>(délimiter definition d'un terme)</dd>
+				</dt>
+			</dl>
+		</p>
+		<p>
+			<h4>Créer des liens :</h4>
+			<dl>
+				<dt><strong>Balise <-a>:</strong> attribut href ; valeur de l'attribut est URL de la page. 
+					<dd>Ex : <-a href="https//google.com">Google<-/a> </dd>
+				</dt>
+				<dt><strong>Pour récupérer une page dans un dossier précédent :</strong>
+					<dd> href="../page.html"> les 2 points signifient "plus haut" dans l'arborescence.</dd>
+				</dt>
+			</dl>
+			<h4>Lien vers une ancre :</h4>
+			C'est un point de repère à mettre dans une page.<br>
+			On utilise id="" dans une balise, Et href="#nomdel'id" pour y accéder.
+			<h4>Pour une ancre sur une autre page :</h4>
+			<dl>
+				<dt>On met le nom de la page puis un # suivit du nom de l'ancre.
+					<dd>Ex: <-a href="page.html#ancre"> </dd>
+				</dt>
+				<dt><strong>Pour afficher une infobulle au survol du lien :</strong>
+					<dd>Ajouter Title a la balise.</dd>
+				</dt>
+				<dt><strong>Pour ouvrir un lien dans un nouvel onglet/fenêtre :</strong>
+					<dd> Ajouter l'attribut target="_blank".<br>
+					Maj+clic = nouvelle fenêtre et ctrl+clic = nouvel onglet. </dd>
+				</dt>
+				<dt><strong>Pour envoyer un mail :</strong>
+					<dd><-a href="mailto:mail@truc.con"> </dd>
+				</dt>
+				<dt><strong>Télécharger un fichier :</strong>
+					<dd><-a href="fichier.zip">  </dd>
+				</dt>
+			</dl>
+		</p>
+		<p>
+			<h4>Les images:</h4>
+			Les images sur internet sont compressées.<br>
+			Jpg( ou jpeg ), png (portable network graphics) plus récent et puissant les images peuvent etres transparentes: compression plus puissantes et 2 versions(8 bits 256 couleurs) et 24 bits (16 millions), et le gif(image anime ou vidéo loop).
+			<dd><-img src="image" alt="texte descriptif"> </dd> 
+		</p>
+		<p>
+			<h4>Miniature cliquable:</h4>
+			<dd><-a href="lien image"><-img src="image petite"><-/a> </dd>
+		</p>
+		<p>
+			<h4>Figures :</h4>
+			Éléments qui viennent compléter le texte pour illustrer le contenu d'une page. 
+			<br>
+			Balise paire. On peut ajouter une image et une légende (ou caption). 
+			<br>
+ 			Ex: schéma, images, citations … 
+ 			<dd><-figure> <-figcaption><-/figcaption> <-img/><-/figure> </dd>
+		</p>
+		
+	</main>
+	<footer>
+		<address>Pierre-Alain GAU, 1ère Année LUDUS Academy</address>
+		<a href="mailto:p-a.gau@ludus-academie.com">Me contacter</a>
+	</footer>
+</body>
+</html>
